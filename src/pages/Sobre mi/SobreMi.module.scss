@@ -1,0 +1,38 @@
+.sobreMi {
+  width: 100%;
+  .title {
+    font-size: var(--h3-tittle-font-size);
+    color: var(--color-primario);
+  }
+
+  .lineaTittle {
+    width: var(--linea-tittle-width);
+    height: var(--linea-tittle-height);
+    background: var(--color-background-frames-right);
+  }
+
+  .lineaSpace {
+    width: var(--linea-spaceP-width);
+    height: var(--linea-spaceP-height);
+    background: var(--color-background-frames-right);
+  }
+
+  p {
+    font-size: var(--font-size-s);
+    margin: var(--margin-p);
+  }
+
+  .cover {
+    height: var(--imagen-width);
+    object-fit: cover;
+  }
+  .contIcoDevelHope {
+    transform: rotate(25deg);
+    .icoDevelHope {
+      position: absolute;
+      height: calc(var(--imagen-width) - 60%);
+      left: var(--position-icoDevelHope-left);
+      bottom: var(--position-icoDevelHope-bottom);
+    }
+  }
+}

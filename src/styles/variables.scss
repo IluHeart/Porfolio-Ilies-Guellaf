@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap");
+
+:root {
+  --spacing-xl: 128px;
+  --spacing-lg: 64px;
+  --spacing-md: 32px;
+  --spacing-sm: 16px;
+  --spacing-xs: 8px;
+
+  --padding-navbar: 64px 32px;
+
+  --gap-section: 30px;
+
+  @include respond-to("large") {
+    --gap-section: 20px;
+  }
+
+  @include respond-to("medium") {
+    --gap-section: 10px;
+  }
+
+  --margin-p: 0px 50px;
+
+  @include respond-to("large") {
+    --margin-p: 0px 25px;
+  }
+
+  @include respond-to("medium") {
+    --margin-p: 0px 10px;
+  }
+
+  --linea-tittle-width: 400px;
+  --linea-tittle-height: 5px;
+  --linea-spaceP-width: 100px;
+  --linea-spaceP-height: 3px;
+
+  @include respond-to("large") {
+    --linea-tittle-width: 300px;
+    --linea-tittle-height: 4px;
+    --linea-spaceP-width: 75px;
+    --linea-spaceP-height: 3px;
+  }
+
+  @include respond-to("medium") {
+    --linea-tittle-width: 200px;
+    --linea-tittle-height: 3px;
+    --linea-spaceP-width: 50px;
+    --linea-spaceP-height: 2px;
+  }
+
+  --imagen-width: 400px;
+
+  @include respond-to("large") {
+    --imagen-width: 300px;
+  }
+
+  @include respond-to("medium") {
+    --imagen-width: 230px;
+  }
+
+  --color-primario: #ffa215;
+  --color-primario-disabled: #d09134;
+  --color-secundario: #ffcf86;
+  --color-secundario-disabled: rgb(196, 162, 110);
+
+  --text-color-background-gradient: white;
+  --text-color-p: #161616;
+
+  --color-gradient1: #ffa215;
+  --color-gradient2: #ffcd83;
+  --color-background-frames-top: linear-gradient(
+    to top,
+    var(--color-gradient1),
+    var(--color-gradient2)
+  );
+  --color-background-frames-left: linear-gradient(
+    to left,
+    var(--color-gradient1),
+    var(--color-gradient2)
+  );
+  --color-background-frames-bottom: linear-gradient(
+    to bottom,
+    var(--color-gradient1),
+    var(--color-gradient2)
+  );
+  --color-background-frames-right: linear-gradient(
+    to right,
+    var(--color-gradient1),
+    var(--color-gradient2)
+  );
+
+  --background-white-container: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255) 60%,
+    rgba(255, 255, 255, 0.685) 100%
+  );
+
+  --box-shadow: 0px 8px 16px 8px rgba(0, 0, 0, 0.25);
+  --box-shadow-filter-background: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  --h5-tittle-font-size: 192px;
+  --h2-tittle-font-size: 96px;
+  --h3-tittle-font-size: 48px;
+  --h4-tittle-font-size: 24px;
+  --h5-tittle-font-size: 12px;
+
+  @include respond-to("large") {
+    --h5-tittle-font-size: 140px;
+    --h2-tittle-font-size: 72px;
+    --h3-tittle-font-size: 36px;
+    --h4-tittle-font-size: 18px;
+    --h5-tittle-font-size: 9px;
+  }
+
+  @include respond-to("medium") {
+    --h5-tittle-font-size: 96px;
+    --h2-tittle-font-size: 48px;
+    --h3-tittle-font-size: 24px;
+    --h4-tittle-font-size: 12px;
+    --h5-tittle-font-size: 6px;
+  }
+
+  @include respond-to("small") {
+    --h5-tittle-font-size: 82px;
+    --h2-tittle-font-size: 40px;
+    --h3-tittle-font-size: 18px;
+    --h4-tittle-font-size: 10px;
+    --h5-tittle-font-size: 4px;
+  }
+
+  --font-size-xl: 112px;
+  --font-size-l: 56px;
+  --font-size-m: 26px;
+  --font-size-s: 14px;
+  --font-size-xs: 7px;
+
+  @include respond-to("large") {
+    --font-size-xl: 96px;
+    --font-size-l: 48px;
+    --font-size-m: 22px;
+    --font-size-s: 12px;
+    --font-size-xs: 6px;
+  }
+
+  @include respond-to("medium") {
+    --font-size-xl: 80px;
+    --font-size-l: 40px;
+    --font-size-m: 20px;
+    --font-size-s: 12px;
+    --font-size-xs: 5px;
+  }
+
+  @include respond-to("small") {
+    --font-size-xl: 64px;
+    --font-size-l: 32px;
+    --font-size-m: 16px;
+    --font-size-s: 10px;
+    --font-size-xs: 4px;
+  }
+
+  --position-icoDevelHope-left: -50px;
+  --position-icoDevelHope-bottom: -50px;
+
+  @include respond-to("medium") {
+    --position-icoDevelHope-left: -20px;
+    --position-icoDevelHope-bottom: -30px;
+  }
+
+  --font-family-style: "Kanit";
+}

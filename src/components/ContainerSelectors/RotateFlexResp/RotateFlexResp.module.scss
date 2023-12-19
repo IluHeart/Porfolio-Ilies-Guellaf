@@ -1,0 +1,14 @@
+@import "../../../styles/mixins";
+
+.rotate {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-section);
+  align-items: center;
+}
+
+@include respond-to("medium") {
+  .rotate {
+    flex-direction: column;
+  }
+}
