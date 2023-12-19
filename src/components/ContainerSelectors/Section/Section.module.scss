@@ -2,4 +2,21 @@
   display: flex;
   gap: var(--gap-section);
   position: relative;
+
+  & > * {
+    animation: fade-up 0.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
+
+    &:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+  }
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+  }
 }

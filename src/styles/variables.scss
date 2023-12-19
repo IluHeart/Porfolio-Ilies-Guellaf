@@ -51,11 +51,11 @@
   --imagen-width: 400px;
 
   @include respond-to("large") {
-    --imagen-width: 300px;
+    --imagen-width: 350px;
   }
 
   @include respond-to("medium") {
-    --imagen-width: 230px;
+    --imagen-width: 300px;
   }
 
   --color-primario: #ffa215;
@@ -159,11 +159,16 @@
   }
 
   --position-icoDevelHope-left: -50px;
-  --position-icoDevelHope-bottom: -50px;
+  --position-icoDevelHope-bottom: -70px;
+
+  @include respond-to("large") {
+    --position-icoDevelHope-left: -40px;
+    --position-icoDevelHope-bottom: -70px;
+  }
 
   @include respond-to("medium") {
     --position-icoDevelHope-left: -20px;
-    --position-icoDevelHope-bottom: -30px;
+    --position-icoDevelHope-bottom: -50px;
   }
 
   --font-family-style: "Kanit";

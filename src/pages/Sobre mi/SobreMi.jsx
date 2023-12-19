@@ -9,9 +9,9 @@ const SobreMi = () => {
         <h3 className={styles.title}>Sobre mi</h3>
         <div className={styles.lineaTittle}></div>
       </Section>
-      <RotateFlexResp width="100%">
+      <RotateFlexResp>
         <Section
-          width="100%"
+          width="auto"
           height="100%"
           items="center"
           content="center"
@@ -30,7 +30,7 @@ const SobreMi = () => {
             construir algo increíble juntos!
           </p>
         </Section>
-        <Section width="100%" height="100%" content="center">
+        <Section width="40%" height="100%" content="center">
           <img
             className={styles.cover}
             src="/Imagen de respaldo/IMG_0815.JPG"
