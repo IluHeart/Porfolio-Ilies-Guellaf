@@ -8,9 +8,10 @@ import Article from "./components/ContainerSelectors/Article/Article";
 import Main from "./components/ContainerSelectors/Main/Main";
 import NavBar from "./components/NavBar/NavBar";
 import SobreMi from "./pages/Sobre mi/SobreMi";
+import Tecnologias from "./pages/Tecnologias/Tecnologias";
 
 function App() {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(1);
 
   const handleLiClick = (index) => {
     setSelectedItem(index);
@@ -34,7 +35,7 @@ function SelectedContent({ selectedItem }) {
   return (
     <Article content="center">
       {selectedItem === 0 && <SobreMi/>}
-      {selectedItem === 1 && <button>Button</button>}
+      {selectedItem === 1 && <Tecnologias/>}
       {selectedItem === 2 && (
         <div className={styles.colorDivs}>
           <div

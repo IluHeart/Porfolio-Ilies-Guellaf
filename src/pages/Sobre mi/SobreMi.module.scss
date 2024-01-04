@@ -27,12 +27,12 @@
     object-fit: cover;
   }
   .contIcoDevelHope {
-    transform: rotate(25deg);
     .icoDevelHope {
       position: absolute;
       height: calc(var(--imagen-width) - 60%);
       left: var(--position-icoDevelHope-left);
       bottom: var(--position-icoDevelHope-bottom);
+      transform: rotate(25deg);
     }
   }
 }

@@ -158,17 +158,17 @@
     --font-size-xs: 4px;
   }
 
-  --position-icoDevelHope-left: -50px;
-  --position-icoDevelHope-bottom: -70px;
+  --position-icoDevelHope-left: -120px;
+  --position-icoDevelHope-bottom: -50px;
 
   @include respond-to("large") {
-    --position-icoDevelHope-left: -40px;
-    --position-icoDevelHope-bottom: -70px;
+    --position-icoDevelHope-left: -100px;
+    --position-icoDevelHope-bottom: -50px;
   }
 
   @include respond-to("medium") {
-    --position-icoDevelHope-left: -20px;
-    --position-icoDevelHope-bottom: -50px;
+    --position-icoDevelHope-left: -80px;
+    --position-icoDevelHope-bottom: -40px;
   }
 
   --font-family-style: "Kanit";

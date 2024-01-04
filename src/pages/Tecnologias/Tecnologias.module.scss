@@ -1,0 +1,22 @@
+.Tecnologias {
+  width: 100%;
+  .title {
+    font-size: var(--h3-tittle-font-size);
+    color: var(--color-primario);
+  }
+  .DivImg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .ImgSides {
+      width: auto;
+      height: 75px;
+      transition: transform 0.2s;
+    }
+
+    .ImgSides:hover {
+      transform: scale(1.1);
+    }
+  }
+}
