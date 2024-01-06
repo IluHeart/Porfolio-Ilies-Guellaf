@@ -1,10 +1,27 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./NavBar.module.scss";
 
 function NavBar({ onLiClick }) {
-  const items = ["Inicio", "Tecnologias", "Proyecto", "Estudios"];
+
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMostrarLista(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
+  const items = ["Inicio", "Tecnologias", "Proyecto", "Estudios" , "Contactame"];
 
   // eslint-disable-next-line no-unused-vars
   const [selectedItem, setSelectedItem] = useState(0);
@@ -17,24 +34,26 @@ function NavBar({ onLiClick }) {
   const handleLiClick = (index) => {
     setSelectedItem(index);
     onLiClick(index);
+    setMostrarLista(false);
   };
+
 
   return (
     <div
+      ref={navRef}
       className={`${styles.navContainer} ${
         mostrarLista ? styles.mostrarLista : ""
       }`}
     >
-      <div className={styles.imgContainer}>
+      <div className={styles.imgContainer} onClick={handleImagenClick}>
         <img
-          src="\public\Imagen de respaldo\IMG_0815.JPG"
+          src="\public\Imagen de respaldo\IMG_0815.jpg"
           alt=""
-          onClick={handleImagenClick}
         />
       </div>
       <div className={styles.navSection}>
         <ul>
-          {items.map((item, index) => (
+          {items.slice(0 ,4).map((item, index) => (
             <li key={index} onClick={() => handleLiClick(index)}>
               {item}
             </li>
@@ -42,7 +61,11 @@ function NavBar({ onLiClick }) {
         </ul>
       </div>
       <div className={styles.buttonContact}>
-        <a href="">Contactame</a>
+          {items.slice(4).map((item, index) => (
+            <a key={index} onClick={() => handleLiClick(4)}>
+              {item}
+            </a>
+          ))}
       </div>
     </div>
   );

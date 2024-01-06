@@ -1,4 +1,8 @@
 .Tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   .title {
     font-size: var(--h3-tittle-font-size);
@@ -8,15 +12,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 
     .ImgSides {
       width: auto;
-      height: 75px;
+      height: var(--svg-logos-height);
       transition: transform 0.2s;
+      cursor: pointer;
     }
 
     .ImgSides:hover {
       transform: scale(1.1);
     }
+      
+   p{
+    font-size: 10px;
+   }
   }
 }

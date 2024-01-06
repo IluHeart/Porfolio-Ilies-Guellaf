@@ -29,6 +29,20 @@
     --margin-p: 0px 10px;
   }
 
+  --svg-logos-height: 80px;
+
+  @include respond-to("large") {
+    --svg-logos-height: 70px
+  }
+
+  @include respond-to("medium") {
+    --svg-logos-height: 60px
+  }
+
+  @include respond-to("small") {
+    --svg-logos-height: 50px
+  }
+
   --linea-tittle-width: 400px;
   --linea-tittle-height: 5px;
   --linea-spaceP-width: 100px;
@@ -131,14 +145,14 @@
   --font-size-xl: 112px;
   --font-size-l: 56px;
   --font-size-m: 26px;
-  --font-size-s: 14px;
+  --font-size-s: 18px;
   --font-size-xs: 7px;
 
   @include respond-to("large") {
     --font-size-xl: 96px;
     --font-size-l: 48px;
     --font-size-m: 22px;
-    --font-size-s: 12px;
+    --font-size-s: 16px;
     --font-size-xs: 6px;
   }
 
@@ -146,7 +160,7 @@
     --font-size-xl: 80px;
     --font-size-l: 40px;
     --font-size-m: 20px;
-    --font-size-s: 12px;
+    --font-size-s: 14px;
     --font-size-xs: 5px;
   }
 
@@ -154,7 +168,7 @@
     --font-size-xl: 64px;
     --font-size-l: 32px;
     --font-size-m: 16px;
-    --font-size-s: 10px;
+    --font-size-s: 14px;
     --font-size-xs: 4px;
   }
 

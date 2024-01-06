@@ -9,9 +9,10 @@ import Main from "./components/ContainerSelectors/Main/Main";
 import NavBar from "./components/NavBar/NavBar";
 import SobreMi from "./pages/Sobre mi/SobreMi";
 import Tecnologias from "./pages/Tecnologias/Tecnologias";
+import Proyectos from "./pages/Proyectos/Proyectos";
 
 function App() {
-  const [selectedItem, setSelectedItem] = useState(1);
+  const [selectedItem, setSelectedItem] = useState(4);
 
   const handleLiClick = (index) => {
     setSelectedItem(index);
@@ -36,27 +37,9 @@ function SelectedContent({ selectedItem }) {
     <Article content="center">
       {selectedItem === 0 && <SobreMi/>}
       {selectedItem === 1 && <Tecnologias/>}
-      {selectedItem === 2 && (
-        <div className={styles.colorDivs}>
-          <div
-            className={styles.colorBox}
-            style={{ backgroundColor: "#ff5733" }}
-          />
-          <div
-            className={styles.colorBox}
-            style={{ backgroundColor: "#33ff57" }}
-          />
-          <div
-            className={styles.colorBox}
-            style={{ backgroundColor: "#5733ff" }}
-          />
-          <div
-            className={styles.colorBox}
-            style={{ backgroundColor: "#ff33cc" }}
-          />
-        </div>
-      )}
+      {selectedItem === 2 && <Proyectos/>}
       {selectedItem === 3 && <img src="tu_imagen.svg" alt="SVG" />}
+      {selectedItem === 4 && <img src="tu_imagen.svg" alt="SVG" />}
     </Article>
   );
 }
