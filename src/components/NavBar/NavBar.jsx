@@ -72,3 +72,5 @@ function NavBar({ onLiClick }) {
 }
 
 export default NavBar;
+
+{/* <a key={index} onClick={() => handleLiClick(prevValue => prevValue + 1)}>*/}
