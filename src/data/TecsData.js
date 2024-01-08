@@ -15,7 +15,7 @@ export const Tecs = [
     imagenSrc: "./src/assets/iconos/nodejs.svg",
   },
   {
-    imagenSrc: "../src/assets/iconos/reactjs.svg",
+    imagenSrc: "./src/assets/iconos/reactjs.svg",
   },
   {
     imagenSrc: "/src/assets/iconos/vitejs.svg",
