@@ -38,8 +38,8 @@ function SelectedContent({ selectedItem }) {
       {selectedItem === 0 && <SobreMi/>}
       {selectedItem === 1 && <Tecnologias/>}
       {selectedItem === 2 && <Proyectos/>}
-      {selectedItem === 3 && <img src="tu_imagen.svg" alt="SVG" />}
-      {selectedItem === 4 && <img src="tu_imagen.svg" alt="SVG" />}
+      {selectedItem === 3 && <p>In Proces</p>}
+      {selectedItem === 4 && <p>In Proces</p>}
     </Article>
   );
 }

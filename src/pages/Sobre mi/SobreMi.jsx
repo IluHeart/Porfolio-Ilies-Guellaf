@@ -12,17 +12,19 @@ const SobreMi = () => {
       <RotateFlexResp>
         <Section
           items="center"
-          content="center"
+          content="start"
           flexDisplay="column"
         >
-          <p>
-            ¡Hola! Soy Ilies , un apasionado desarrollador web full stack
-            junior.
-          </p>
-          <p>
-            Mi fascinación por la creación de experiencias digitales me
-            lleva a explorar continuamente nuevas tecnologías.
-          </p>
+  <div style={{display: "flex", flexDirection: "column" , alignItems: "start", gap:"15px"}}>
+            <p>
+              ¡Hola! Soy <strong>Ilies guellaf chakiri</strong> , un apasionado desarrollador web full stack
+              junior.
+            </p>
+            <p>
+              Mi fascinación por la creación de experiencias digitales me
+              lleva a explorar continuamente nuevas tecnologías.
+            </p>
+  </div>
           <div className={styles.lineaSpace}></div>
           <p>
             Especializado en HTML, CSS, JavaScript , Node.js y react.js, estoy
@@ -34,7 +36,7 @@ const SobreMi = () => {
         <Section width="100%" content="center">
           <img
             className={styles.cover}
-            src="/Imagen de respaldo/IMG_0815.JPG"
+            src="/Imagen de respaldo/FotoPresentacion.JPG"
             alt=""
           />
           <div className={styles.contIcoDevelHope}>
