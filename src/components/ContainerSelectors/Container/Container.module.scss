@@ -9,7 +9,7 @@
   margin: 0px;
   height: 500px;
   background: var(--background-white-container),
-    url("./src/assets/background/background.svg");
+    url("/src/assets/background/background.svg");
 }
 
 @include respond-to("medium") {
