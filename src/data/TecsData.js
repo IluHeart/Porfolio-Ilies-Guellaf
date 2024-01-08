@@ -40,7 +40,7 @@ export const Tecs = [
     imagenSrc: "/src/assets/iconos/vue.svg",
   },
   {
-    imagenSrc: "./src/assets/iconos/angular.svg",
+    imagenSrc: "/src/assets/iconos/angular.svg",
   },
   {
     imagenSrc: "/src/assets/iconos/mongodb.svg",
@@ -53,7 +53,7 @@ export const Tecs = [
     imagenSrc: "/src/assets/iconos/visualcode.svg",
   },
   {
-    imagenSrc: "./src/assets/iconos/trello.svg",
+    imagenSrc: "/src/assets/iconos/trello.svg",
   },
   {
     imagenSrc: "/src/assets/iconos/figma.svg",
