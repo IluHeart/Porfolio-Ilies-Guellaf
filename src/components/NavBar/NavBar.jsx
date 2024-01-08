@@ -47,7 +47,7 @@ function NavBar({ onLiClick }) {
     >
       <div className={styles.imgContainer} onClick={handleImagenClick}>
         <img
-          src="/public/Imagen de respaldo/IMG_0815.JPG"
+          src="/Imagen de respaldo/IMG_0815.JPG"
           alt=""
         />
       </div>

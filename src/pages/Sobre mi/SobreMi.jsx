@@ -17,7 +17,10 @@ const SobreMi = () => {
         >
           <p>
             ¡Hola! Soy Ilies , un apasionado desarrollador web full stack
-            junior. Mi fascinación por la creación de experiencias digitales me
+            junior.
+          </p>
+          <p>
+            Mi fascinación por la creación de experiencias digitales me
             lleva a explorar continuamente nuevas tecnologías.
           </p>
           <div className={styles.lineaSpace}></div>

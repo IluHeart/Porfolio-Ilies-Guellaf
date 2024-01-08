@@ -6,7 +6,7 @@ export const Tecs = [
     imagenSrc: "/src/assets/iconos/html.svg",
   },
   {
-    imagenSrc: "/src/assets/iconos/css.svg",
+    imagenSrc: "/iconos/css.svg",
   },
   {
     imagenSrc: "/src/assets/iconos/npm.svg",
