@@ -69,7 +69,7 @@
   }
 
   @include respond-to("medium") {
-    --imagen-width: 250px;
+    --imagen-width: 300px;
   }
 
   --color-primario: #ffa215;
@@ -183,6 +183,11 @@
   @include respond-to("medium") {
     --position-icoDevelHope-left: -80px;
     --position-icoDevelHope-bottom: -40px;
+  }
+
+  @include respond-to("small") {
+    --position-icoDevelHope-left: -60px;
+    --position-icoDevelHope-bottom: auto;
   }
 
   --font-family-style: "Kanit";
