@@ -1,67 +1,67 @@
 export const Tecs = [
   {
-    imagenSrc: "./src/assets/javascript.svg",
+    imagenSrc: "./public/iconos/javascript.svg",
   },
   {
-    imagenSrc: "./src/assets/html.svg",
+    imagenSrc: "./public/iconos/html.svg",
   },
   {
-    imagenSrc: "./src/assets/css.svg",
+    imagenSrc: "./public/iconos/css.svg",
   },
   {
-    imagenSrc: "./src/assets/npm.svg",
+    imagenSrc: "./public/iconos/npm.svg",
   },
   {
-    imagenSrc: "./src/assets/nodejs.svg",
+    imagenSrc: "./public/iconos/nodejs.svg",
   },
   {
-    imagenSrc: "./src/assets/reactjs.svg",
+    imagenSrc: "./public/iconos/reactjs.svg",
   },
   {
-    imagenSrc: "./src/assets/vitejs.svg",
+    imagenSrc: "./public/iconos/vitejs.svg",
   },
   {
-    imagenSrc: "./src/assets/sass.svg",
+    imagenSrc: "./public/iconos/sass.svg",
   },
 // 
   {
-    imagenSrc: "./src/assets/php.svg",
+    imagenSrc: "./public/iconos/php.svg",
   },
   {
-    imagenSrc: "./src/assets/mysql.svg",
+    imagenSrc: "./public/iconos/mysql.svg",
   },
   {
-    imagenSrc: "./src/assets/python.svg",
+    imagenSrc: "./public/iconos/python.svg",
   },
   {
-    imagenSrc: "./src/assets/java.svg",
+    imagenSrc: "./public/iconos/java.svg",
   },
   {
-    imagenSrc: "/src/assets/vue.svg",
+    imagenSrc: "./public/iconos/vue.svg",
   },
   {
-    imagenSrc: "/src/assets/angular.svg",
+    imagenSrc: "./public/iconos/angular.svg",
   },
   {
-    imagenSrc: "./src/assets/mongodb.svg",
+    imagenSrc: "/public/iconos/mongodb.svg",
   },
   // 
   {
-    imagenSrc: "./src/assets/github.svg",
+    imagenSrc: "./public/iconos/github.svg",
   },
   {
-    imagenSrc: "./src/assets/visualcode.svg",
+    imagenSrc: "./public/iconos/visualcode.svg",
   },
   {
-    imagenSrc: "./src/assets/trello.svg",
+    imagenSrc: "./public/iconos/trello.svg",
   },
   {
-    imagenSrc: "./src/assets/figma.svg",
+    imagenSrc: "./public/iconos/figma.svg",
   },
   {
-    imagenSrc: "./src/assets/photoshop.svg",
+    imagenSrc: "./public/iconos/photoshop.svg",
   },
   {
-    imagenSrc: "./src/assets/typescript.svg",
+    imagenSrc: "./public/iconos/typescript.svg",
   },
 ];
