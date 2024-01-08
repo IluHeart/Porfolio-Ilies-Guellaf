@@ -37,10 +37,10 @@ export const Tecs = [
     imagenSrc: "./src/assets/java.svg",
   },
   {
-    imagenSrc: "./src/assets/vue.svg",
+    imagenSrc: "/src/assets/vue.svg",
   },
   {
-    imagenSrc: "./src/assets/angular.svg",
+    imagenSrc: "/src/assets/angular.svg",
   },
   {
     imagenSrc: "./src/assets/mongodb.svg",
