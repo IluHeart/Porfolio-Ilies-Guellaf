@@ -59,9 +59,9 @@ export const Tecs = [
     imagenSrc: "/iconos/figma.svg",
   },
   {
-    imagenSrc: "/Imagen de respaldo/IMG_0815.JPG",
+    imagenSrc: "/iconos/photoshop.svg",
   },
   {
-    imagenSrc: ("/src/assets/background/background.svg"),
+    imagenSrc: "/iconos/typescript.svg",
   },
 ];
