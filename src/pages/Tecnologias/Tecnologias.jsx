@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import styles from "./Tecnologias.module.scss";
 import Section from "../../components/ContainerSelectors/Section/Section";
-import { Tecs } from "../../data/tecsdata.js"
+import { Tecs } from "../../data/tecsdata"
 
 const Tecnologias = () => {
   return (
