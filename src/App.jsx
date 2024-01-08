@@ -12,7 +12,7 @@ import Tecnologias from "./pages/Tecnologias/Tecnologias";
 import Proyectos from "./pages/Proyectos/Proyectos";
 
 function App() {
-  const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedItem, setSelectedItem] = useState(1);
 
   const handleLiClick = (index) => {
     setSelectedItem(index);
