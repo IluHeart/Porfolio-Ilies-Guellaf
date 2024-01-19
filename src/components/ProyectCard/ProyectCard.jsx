@@ -7,6 +7,7 @@ const ProyectCard = ({
   description,
   githubLink,
   webLink,
+  webButtonDisabled
 }) => {
   return (
     <div className={styles.proyectCard}>
@@ -15,10 +16,19 @@ const ProyectCard = ({
         <h4>{title}</h4>
         <p>{description}</p>
         <div className={styles.buttonContainer}>
-          <button className={styles.gitButton} onClick={() => window.open(githubLink, "_blank")}>
+          <button
+            className={styles.gitButton}
+            onClick={() => window.open(githubLink, "_blank")}
+          >
             GITHUB
           </button>
-          <button className={styles.webButton} onClick={() => window.open(webLink, "_blank")}>
+          <button
+            className={`${styles.webButton} ${
+              webButtonDisabled ? styles.disabled : ""
+            }`}
+            onClick={() => window.open(webLink, "_blank")}
+            disabled={webButtonDisabled}
+          >
             PAGINA WEB
           </button>
         </div>

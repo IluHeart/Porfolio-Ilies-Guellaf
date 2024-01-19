@@ -1,16 +1,25 @@
 import styles from "./Proyectos.module.scss";
 import Section from "../../components/ContainerSelectors/Section/Section";
 import ProyectCard from "../../components/ProyectCard/ProyectCard";
+import { Projects } from "../../data/ProjectsData.mock";
 
 const Proyectos = () => {
   return (
     <div className={styles.Proyectos}>
       <Section>
-        <ProyectCard
-          imagenSrc="./imagenes de los proyectos/Miniatura EA.jpg"
-          title="Replicación de la Página Web de Electronic Arts en React"
-          description={"Este fue el proyecto que presentamos al final del bootcamp para mostrar el uso de componentes reutilizables y manejables con Reactjs"}
-        />
+        <div className={styles.ProjectsCont}>
+          {Projects.map((elemento, index) => (
+            <ProyectCard
+              key={index}
+              imagenSrc={elemento.imagenSrc}
+              title={elemento.title}
+              description={elemento.description}
+              githubLink={elemento.githubLink}
+              webLink={elemento.webLink}
+              webButtonDisabled={elemento.webButtonDisabled}
+            />
+          ))}
+        </div>
       </Section>
     </div>
   );

@@ -19,7 +19,9 @@
     padding: 10px;
     gap: 10px;
     display: flex;
+    height: 353px; //chapuza ya se , funcion .
     flex-direction: column;
+    justify-content: space-between;
     .buttonContainer{
         display: flex;
         justify-content: space-around;
@@ -52,10 +54,23 @@
             transition: transform 0.3s , background-color 0.3s , border 0.3s;
         }
         .webButton:hover{
-            transform: scale(1.1);
-            background-color: var(--color-gradient1);
-            background: var(--color-background-frames-left);
-            border: 2px solid orange;
+          transform: scale(1.1);
+          background-color: var(--color-gradient1);
+          background: var(--color-background-frames-left);
+          border: 2px solid orange;
+      }
+        .webButton:disabled{
+          background: #dddddd;
+          color: #666666;
+          border: 2px solid rgb(0, 0, 0);
+          cursor: not-allowed;
+        }
+        .webButton:disabled:hover{
+          transform: scale(1);
+          background: #dddddd;
+          color: #666666;
+          border: 2px solid rgb(0, 0, 0);
+          cursor: not-allowed;
         }
     }
     h4{

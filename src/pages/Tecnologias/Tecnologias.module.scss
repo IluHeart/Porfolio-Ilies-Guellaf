@@ -18,8 +18,7 @@
     .ImgSides {
       width: auto;
       height: var(--svg-logos-height);
-      transition: transform 0.2s;
-      cursor: pointer;
+      transition: transform 0.2s; 
     }
 
     .ImgSides:hover {

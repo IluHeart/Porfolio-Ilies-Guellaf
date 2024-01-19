@@ -15,5 +15,6 @@
 @include respond-to("medium") {
   .container {
     flex-direction: column;
+    overflow:scroll;
   }
 }
