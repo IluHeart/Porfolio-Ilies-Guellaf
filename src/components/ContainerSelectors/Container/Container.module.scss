@@ -12,9 +12,10 @@
     url("/src/assets/background/background.svg");
 }
 
+
 @include respond-to("medium") {
   .container {
     flex-direction: column;
-    overflow:scroll;
+    overflow:visible;
   }
 }

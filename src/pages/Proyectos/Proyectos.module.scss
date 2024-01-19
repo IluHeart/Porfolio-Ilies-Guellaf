@@ -1,6 +1,37 @@
-.Proyectos{
-    .ProjectsCont{
-        display: flex;
-        gap: 30px;
+@import "../../styles/mixins";
+
+.Proyectos {
+  .ProjectsCont {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+@include respond-to("large") {
+  .Proyectos {
+    .ProjectsCont {
+      display: grid;
+      margin-top: 250px;
+      grid-template-columns: 1fr 1fr;
     }
+  }
+}
+
+@include respond-to("medium") {
+  .Proyectos {
+    .ProjectsCont {
+      margin-top: 300px;
+      flex-direction: column;
+    }
+  }
+}
+
+@include respond-to("small") {
+  .Proyectos {
+    .ProjectsCont {
+      margin-top: 900px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
 }
